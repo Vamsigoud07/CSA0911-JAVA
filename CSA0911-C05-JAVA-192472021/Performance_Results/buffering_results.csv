@@ -1,0 +1,4 @@
+Target_Size_MB,Actual_Size_Bytes,Total_Lines,Unbuffered_Time_ms,Buffered_Time_ms,Speedup_Factor
+1,1048612,23265,1837,1,1837.00
+10,10485791,224961,18430,4,4607.50
+50,52428821,1102723,176850,31,5704.84

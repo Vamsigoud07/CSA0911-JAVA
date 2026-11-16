@@ -1,0 +1,4 @@
+Records,Statement_ms,PreparedStatement_ms,Batch_ms,Batch_Speedup_vs_Statement
+1000,154,32,20,7.70
+10000,448,195,135,3.32
+100000,1400,780,1434,0.98
