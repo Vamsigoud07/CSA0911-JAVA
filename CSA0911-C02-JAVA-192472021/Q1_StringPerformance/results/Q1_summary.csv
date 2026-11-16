@@ -1,0 +1,10 @@
+Workload,Approach,Tickets,Fields,AvgTimeMs,AvgMemMb,EstObjects
+Workload 1 (1 ticket),String (+),1,5,0.1617,0.0177,4
+Workload 1 (1 ticket),StringBuilder,1,5,0.0362,0.0038,2
+Workload 1 (1 ticket),StringBuffer,1,5,0.0398,0.0035,2
+Workload 2 (2.5k tix),String (+),2500,50,13.9447,49.4032,122500
+Workload 2 (2.5k tix),StringBuilder,2500,50,3.7023,3.0658,5000
+Workload 2 (2.5k tix),StringBuffer,2500,50,19.9247,1.9803,5000
+Workload 3 (10k tix),String (+),10000,50,45.4621,56.8035,490000
+Workload 3 (10k tix),StringBuilder,10000,50,19.2619,20.1495,20000
+Workload 3 (10k tix),StringBuffer,10000,50,63.7723,20.0035,20000

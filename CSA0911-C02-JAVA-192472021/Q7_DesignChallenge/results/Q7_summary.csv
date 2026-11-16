@@ -1,0 +1,4 @@
+Workload,Tickets,Fields,OriginalTimeMs,RedesignedTimeMs,SpeedupFactor,LatencyCutPct,OriginalObjects,RedesignedObjects,ObjReductionPct
+Workload 1 (1 ticket),1,5,0.0776,0.0322,2.41,58.51,4,2,50.00
+Workload 2 (2.5k tix),2500,50,22.8128,8.0443,2.84,64.74,122500,5000,95.92
+Workload 3 (10k tix),10000,50,38.1685,21.4423,1.78,43.82,490000,20000,95.92

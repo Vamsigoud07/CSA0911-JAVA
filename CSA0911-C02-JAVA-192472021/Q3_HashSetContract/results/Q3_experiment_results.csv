@@ -1,0 +1,4 @@
+Experiment,PredictedSize,ActualSize,Status,Explanation
+"Experiment 1: Incorrect Appears to Work",2,2,PASSED,"Appears to work because different regNos produce distinct objects, and reference equality (==) suppresses re-adding bs1."
+"Experiment 2: Contract Violation Exposed",2,2,PASSED,"Without hashCode(), Object.hashCode uses memory address; objects land in different buckets so equals() is never called. With overridden hashCode(), both map to same bucket and duplicate is eliminated."
+"Experiment 3: Mutable Field Hazard",1,1,PASSED,"Object remains in HashSet (size=1) but contains() returns FALSE! The new hashCode places lookup in a different bucket. Demonstrates why hash fields must be final/immutable."

@@ -1,0 +1,7 @@
+Patients,Operation,PriorityQueueMs,FiveFifoMs,SortedLinkedListMs
+1000,Admission (Offer),2.7180,0.1337,3.8567
+1000,Discharge (Poll),0.3189,0.1310,0.0831
+10000,Admission (Offer),0.4129,0.2210,109.6937
+10000,Discharge (Poll),1.2899,0.1475,0.2314
+100000,Admission (Offer),2.8948,0.8408,O(n^2) >45s
+100000,Discharge (Poll),14.7887,0.6534,5.0000

@@ -1,0 +1,25 @@
+Size,Operation,ArrayListMs,LinkedListMs,ArrayDequeMs
+1000,1. Add End,3.8659,0.1318,0.1086
+1000,2. Insert Front,0.2169,0.0246,0.0393
+1000,3. Insert Middle,0.0809,0.4101,N/A (O(n))
+1000,4. Remove Front,0.1276,0.0215,0.0371
+1000,5. Remove Middle,0.0499,0.1865,N/A (O(n))
+1000,6. Access k-th,0.5563,5.9210,N/A (O(n))
+1000,7. Full Iteration,0.0879,0.1222,0.1092
+1000,8. Both Ends,0.2885,0.0874,0.0900
+10000,1. Add End,0.1522,0.1128,0.1288
+10000,2. Insert Front,0.4843,0.0044,0.0275
+10000,3. Insert Middle,0.1430,2.7975,N/A (O(n))
+10000,4. Remove Front,0.3432,0.0039,0.0038
+10000,5. Remove Middle,0.1175,2.3478,N/A (O(n))
+10000,6. Access k-th,0.5753,41.3440,N/A (O(n))
+10000,7. Full Iteration,0.2699,0.2169,0.1757
+10000,8. Both Ends,0.8507,0.0177,0.0438
+100000,1. Add End,1.7735,2.2181,0.5660
+100000,2. Insert Front,3.3149,0.0042,0.1091
+100000,3. Insert Middle,1.0529,20.7517,N/A (O(n))
+100000,4. Remove Front,3.2104,0.0140,0.0116
+100000,5. Remove Middle,0.9832,22.6612,N/A (O(n))
+100000,6. Access k-th,1.2593,482.4810,N/A (O(n))
+100000,7. Full Iteration,2.7486,1.9564,1.7693
+100000,8. Both Ends,6.5942,0.0102,0.1069
