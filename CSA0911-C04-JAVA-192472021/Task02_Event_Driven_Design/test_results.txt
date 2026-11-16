@@ -1,0 +1,13 @@
+==================================================================
+TASK 2: FROM REQUIREMENT TO EVENT-DRIVEN DESIGN - TEST RESULTS
+Student: K VENKATA VAMSI GOUD (192472021) | Course: CSA09
+==================================================================
+
+[TEST 2.1] Initial state verified. Default Department: Cardiology
+Default Doctors count: 2
+[TEST 2.2] Switched to Neurology: Doctors count = 2
+Doctor 1: Dr. C. Iyer (MD, DM (Neuro))
+Saved screen: Task02_AppointmentWindow.png
+[TEST 2.3] Saved Confirm Exit dialog: Task02_ConfirmExit.png
+
+ALL TASK 2 TESTS COMPLETED SUCCESSFULLY.

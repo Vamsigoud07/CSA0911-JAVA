@@ -1,0 +1,18 @@
+==================================================================
+TASK 1: GUI DESIGN REVIEW - EXECUTION AND TEST RESULTS
+Student: K VENKATA VAMSI GOUD (192472021) | Course: CSA09
+==================================================================
+
+[TEST 1.1] PoorFeeWindow captured: Task01_Diagnosis.png (Flawed UI with monolithic logic)
+[TEST 1.2] Repaired FeeWindow initialized: Task01_FeeWindow.png
+
+--- RUNNING VALIDATION SUITE ---
+Case A (Empty Reg): Expected Fail | Actual: Validation Error: Registration Number cannot be empty. | Result: PASS
+Case B (Non-numeric): Expected Fail | Actual: Validation Error: Amount must be a valid numeric value. | Result: PASS
+Case C (Negative): Expected Fail | Actual: Validation Error: Minimum payable fee is INR 100.00. | Result: PASS
+Case D (Exceed Max): Expected Fail | Actual: Validation Error: Maximum single fee payment is INR 500000.00. | Result: PASS
+Case E (Valid Payment): Expected Success | TxId: TXN-B25C2671 | Result: PASS
+[TEST 1.3] Payment Success captured: Task01_PaymentSuccess.png
+[TEST 1.4] Official Receipt rendered: Task01_Receipt.png
+
+ALL TASK 1 TESTS PASSED SUCCESSFULLY.

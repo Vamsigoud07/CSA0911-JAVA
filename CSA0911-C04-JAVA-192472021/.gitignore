@@ -1,0 +1,25 @@
+# Compiled Java bytecode
+*.class
+bin/
+*/bin/
+
+# Temporary and log files
+*.log
+*.tmp
+*.bak
+
+# IDE and Editor configuration
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# OS-generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Environment and secrets
+.env
+*.env

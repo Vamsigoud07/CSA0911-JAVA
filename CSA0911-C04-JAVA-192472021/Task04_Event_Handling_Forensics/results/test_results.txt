@@ -1,0 +1,15 @@
+==================================================================
+TASK 4: EVENT-HANDLING FORENSICS - TEST AND FORENSIC RESULTS
+Student: K VENKATA VAMSI GOUD (192472021) | Course: CSA09
+==================================================================
+
+[TEST 4.1] Captured Before Minimize: Task04_BeforeMinimize.png
+Total points stored: 7
+Status Label text: Total Dots Placed: 7 | Last: (280, 310)
+[TEST 4.2] Captured After Restore: Task04_AfterRestore.png
+Points successfully retained and redrawn: 7
+[TEST 4.3] Captured Updated Click Count: Task04_ClickCount.png
+Final Points count: 10 | Status: Total Dots Placed: 10 | Last: (220, 260)
+
+--- TASK 4.4: COMPILER RECURRENCE PREVENTION EXPERIMENT ---
+Testing compiler detection of misspelled callback 'mouseclicked' with @Override...

@@ -1,0 +1,18 @@
+==================================================================
+TASK 3: FROM SKETCH TO LAYOUT - RESIZING AND EXECUTION RESULTS
+Student: K VENKATA VAMSI GOUD (192472021) | Course: CSA09
+==================================================================
+
+[TEST 3.1] Captured Medium Window (720x480): Task03_MediumWindow.png
+Observations: Search controls comfortable, JTable fills center, buttons clear.
+[TEST 3.2] Captured Small Window (480x360): Task03_SmallWindow.png
+Observations: Table scrolls vertically, search bar wraps or fits, all buttons visible.
+[TEST 3.3] Captured Large Window (1024x700): Task03_LargeWindow.png
+Observations: Center JTable expands horizontally and vertically; top/bottom panels retain natural height.
+
+[TEST 3.4] Search for 'Java' in 'Computer Science':
+Matching rows in table: 1
+First result: Effective Java
+Status: Showing 1 - 1 of 1 matches | Page 1 of 1
+
+ALL TASK 3 TESTS AND RESIZING CAPTURES COMPLETED SUCCESSFULLY.

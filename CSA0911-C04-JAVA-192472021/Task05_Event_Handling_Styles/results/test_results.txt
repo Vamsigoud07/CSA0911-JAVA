@@ -1,0 +1,17 @@
+==================================================================
+TASK 5: SAME SCREEN, DIFFERENT EVENT-HANDLING STYLES - TEST RESULTS
+Student: K VENKATA VAMSI GOUD (192472021) | Course: CSA09
+==================================================================
+
+[TEST 5.1] Valid USD Conversion: Result: 10000.00 INR = 120.00 USD | Saved: Task05_ValidUSD.png
+[TEST 5.2] Invalid Amount: 'abc_invalid' -> 'Result: Invalid amount' | Saved: Task05_InvalidAmount.png
+[TEST 5.3] Enter Key Conversion: Result: 5000.00 INR = 55.00 EUR | Saved: Task05_EnterKey.png
+
+--- VERIFYING INDEPENDENT EVENT-HANDLING STYLES ---
+Style A (Frame Listener): Loaded OK
+Style B (Named Inner Class): Loaded OK
+Style C (Anonymous Inner Class): Loaded OK
+Style D (Lambda Expression): Loaded OK
+Alternative (Swing Action): Loaded OK
+
+ALL TASK 5 TESTS COMPLETED SUCCESSFULLY.
