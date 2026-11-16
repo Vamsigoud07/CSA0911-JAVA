@@ -1,0 +1,34 @@
+﻿==================================================
+   THREAD LIFECYCLE: EXTENDING java.lang.Thread   
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+
+--- State Before start() ---
+Station-1: State = NEW | isAlive() = false
+Station-4: State = NEW | isAlive() = false
+
+--- Starting All 4 Scanner Threads ---
+[Station-1] Started scanning 50 scripts on Thread [Station-1, Priority: 1, State: RUNNABLE]
+
+--- Sample State While Running ---
+Station-1: State = TIMED_WAITING | isAlive() = true
+[Station-4] Started scanning 50 scripts on Thread [Station-4, Priority: 10, State: RUNNABLE]
+[Station-3] Started scanning 50 scripts on Thread [Station-3, Priority: 5, State: RUNNABLE]
+[Station-2] Started scanning 50 scripts on Thread [Station-2, Priority: 5, State: RUNNABLE]
+Station-4: State = BLOCKED | isAlive() = true
+
+--- Main Thread Waiting via join() ---
+[Station-2] Finished batch! Total scanned: 50 scripts.
+[Station-1] Finished batch! Total scanned: 50 scripts.
+[Station-3] Finished batch! Total scanned: 50 scripts.
+[Station-4] Finished batch! Total scanned: 50 scripts.
+
+--- State After join() ---
+Station-1: State = TERMINATED | isAlive() = false | Scanned: 50
+Station-2: State = TERMINATED | isAlive() = false | Scanned: 50
+Station-3: State = TERMINATED | isAlive() = false | Scanned: 50
+Station-4: State = TERMINATED | isAlive() = false | Scanned: 50
+
+[FINAL SCANNER AUDIT] Total answer scripts successfully digitized: 200 / 200
+==================================================
+

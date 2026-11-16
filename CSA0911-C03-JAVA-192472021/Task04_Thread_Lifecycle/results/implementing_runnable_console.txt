@@ -1,0 +1,17 @@
+﻿==================================================
+   THREAD LIFECYCLE: IMPLEMENTING Runnable        
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+[Station-2] Running task on Thread [Worker-Thread-2, ID: 24, Priority: 5]
+[Station-3] Running task on Thread [Worker-Thread-3, ID: 25, Priority: 5]
+[Station-1] Running task on Thread [Worker-Thread-1, ID: 23, Priority: 5]
+[Station-4] Running task on Thread [Worker-Thread-4, ID: 26, Priority: 5]
+[Station-3] Completed scanning 40 scripts.
+[Station-2] Completed scanning 40 scripts.
+[Station-4] Completed scanning 40 scripts.
+[Station-1] Completed scanning 40 scripts.
+
+All runnable scanner tasks completed successfully.
+Total processed scripts: 160 / 160
+==================================================
+

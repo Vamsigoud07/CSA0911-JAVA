@@ -1,0 +1,88 @@
+﻿==================================================
+   ONLINE EXAMINATION PORTAL - 3 LAYER SYSTEM     
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+
+>>> SCENARIO 1: Valid Student Submission <<<
+
+=======================================================
+[CONTROLLER LAYER] Received Submission Request
+  Student Reg No : 192472021
+  Exam Code      : CSA09-CO3
+  File Name      : vamsi_answersheet.pdf
+  File Size      : 2048 KB
+=======================================================
+[SERVICE LAYER] Validating submission parameters for Student: 192472021
+[STORAGE LAYER] Successfully wrote 1024 bytes to file: vamsi_answersheet.pdf
+[SERVICE LAYER] Answer script verified and forwarded to archival store.
+[CONTROLLER LAYER] Result: SUBMISSION ACCEPTED (Status Code: 200 OK)
+[CONTROLLER FINALLY] Audit session closed. Response dispatched to client.
+
+>>> SCENARIO 2: Unregistered Student Failure <<<
+
+=======================================================
+[CONTROLLER LAYER] Received Submission Request
+  Student Reg No : 192479999
+  Exam Code      : CSA09-CO3
+  File Name      : guest_answersheet.pdf
+  File Size      : 1024 KB
+=======================================================
+[SERVICE LAYER] Validating submission parameters for Student: 192479999
+java.exe : [CONTROLLER CATCH - StudentNotRegisteredException] (HTTP 403 Forbidden)
+At line:10 char:9
++ $out2 = & $JAVA -cp $CP task02.ExamPortalApp 2>&1 | Out-String
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([CONTROLLER CAT... 403 Forbidden):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  User Message   : Access Denied: Student with Register Number '192479999' is not enrolled in exam CSA09-CO3
+  Failed Reg No  : 192479999
+[CONTROLLER FINALLY] Audit session closed. Response dispatched to client.
+
+>>> SCENARIO 3: Late Submission (Window Closed) <<<
+
+=======================================================
+[CONTROLLER LAYER] Received Submission Request
+  Student Reg No : 192472021
+  Exam Code      : CSA09-CO3
+  File Name      : vamsi_late_submission.pdf
+  File Size      : 1024 KB
+=======================================================
+[SERVICE LAYER] Validating submission parameters for Student: 192472021
+[CONTROLLER CATCH - ExamWindowClosedException] (HTTP 410 Gone / Window Closed)
+  User Message   : Submission Window Expired: Exam portal closed at deadline for Exam ID: CSA09-CO3
+  Closed at Time : 1794805569400
+[CONTROLLER FINALLY] Audit session closed. Response dispatched to client.
+
+>>> SCENARIO 4: Oversized File Upload <<<
+
+=======================================================
+[CONTROLLER LAYER] Received Submission Request
+  Student Reg No : 192472021
+  Exam Code      : CSA09-CO3
+  File Name      : huge_media_recording.pdf
+  File Size      : 12288 KB
+=======================================================
+[SERVICE LAYER] Validating submission parameters for Student: 192472021
+[CONTROLLER CATCH - FileSizeExceededException] (HTTP 413 Payload Too Large)
+  User Message   : File size 12 MB exceeds the strict limit of 5 MB.
+  Actual Size    : 12582912 bytes (Max: 5242880)
+[CONTROLLER FINALLY] Audit session closed. Response dispatched to client.
+
+>>> SCENARIO 5: Storage Layer Failure with Exception Chaining <<<
+
+=======================================================
+[CONTROLLER LAYER] Received Submission Request
+  Student Reg No : 192472021
+  Exam Code      : CSA09-CO3
+  File Name      : disk_full_answersheet.pdf
+  File Size      : 1024 KB
+=======================================================
+[SERVICE LAYER] Validating submission parameters for Student: 192472021
+[CONTROLLER CATCH - SubmissionStorageException] (HTTP 500 Internal Storage Error)
+  High-level Msg : Storage Layer Failure: Unable to persist answer-script 'corrupt_disk_disk_full_answersheet.pdf' for 
+student 192472021
+  Root Cause Type: java.io.IOException
+  Root Cause Msg : POSIX write failure: Disk quota exceeded on /var/exam_storage
+[CONTROLLER FINALLY] Audit session closed. Response dispatched to client.
+

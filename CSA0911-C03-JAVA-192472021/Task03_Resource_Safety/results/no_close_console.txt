@@ -1,0 +1,8 @@
+﻿==================================================
+   ALTERNATIVE DEMO: UNCLOSED RESOURCE LEAK RISK  
+==================================================
+Simulating sequential unclosed streams without close()...
+Successfully opened 50 file handles without explicit close.
+Notice: Operating system file table slots remain occupied until JVM exit
+or nondeterministic Garbage Collector finalization.
+

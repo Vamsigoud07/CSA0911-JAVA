@@ -1,0 +1,1 @@
+1234567890 1000.00 non_existent_reader.cfg

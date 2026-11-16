@@ -1,0 +1,20 @@
+﻿==================================================
+   STUDENT B: CHAINED VS UNCHAINED EXCEPTION DEMO 
+==================================================
+
+--- 1. UNCHAINED EXCEPTION (Poor Practice: Root Cause Lost) ---
+Caught Exception: Could not store answer script
+getCause() returns: null
+Notice: Root cause information is completely LOST to operations teams!
+
+--- 2. CHAINED EXCEPTION (Best Practice: Full Cause Intact) ---
+Caught Exception: Could not store answer script
+getCause() returns: java.io.IOException: Kernel error: NFS mount point timed out [EIO 5]
+Printing Full Chained Stack Trace (Root Cause Preserved):
+task02.SubmissionStorageException: Could not store answer script
+	at task02.ChainedVsUnchainedDemo.simulateChainedFailure(ChainedVsUnchainedDemo.java:55)
+	at task02.ChainedVsUnchainedDemo.main(ChainedVsUnchainedDemo.java:32)
+Caused by: java.io.IOException: Kernel error: NFS mount point timed out [EIO 5]
+	at task02.ChainedVsUnchainedDemo.simulateChainedFailure(ChainedVsUnchainedDemo.java:52)
+	... 1 more
+

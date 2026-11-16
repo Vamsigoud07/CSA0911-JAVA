@@ -1,0 +1,11 @@
+Trial,RunTimeMs,FirstFinished,SecondFinished,ThirdFinished,FourthFinished,DidMaxPriorityWin
+1,179,Station-1,Station-4,Station-3,Station-2,false
+2,175,Station-3,Station-1,Station-4,Station-2,false
+3,180,Station-4,Station-1,Station-3,Station-2,true
+4,174,Station-1,Station-4,Station-3,Station-2,false
+5,181,Station-1,Station-4,Station-3,Station-2,false
+6,177,Station-3,Station-2,Station-4,Station-1,false
+7,181,Station-4,Station-2,Station-3,Station-1,true
+8,177,Station-4,Station-3,Station-2,Station-1,true
+9,177,Station-4,Station-3,Station-1,Station-2,true
+10,185,Station-1,Station-4,Station-2,Station-3,false

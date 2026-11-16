@@ -1,0 +1,13 @@
+﻿==================================================
+   SEAT BOOKING WITHOUT SYNCHRONIZATION (RACE)    
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+
+--- Booking Results (Unsynchronized) ---
+Initial Available Seats : 10
+Total Booking Requests  : 100
+Seats Sold Recorded     : 99
+Remaining Seats Counter : -87
+[CRITICAL ANOMALY] Double Booking Occurred! 89 seats oversold!
+==================================================
+

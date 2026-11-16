@@ -1,0 +1,29 @@
+# Java compiled bytecode
+*.class
+*.jar
+*.war
+*.ear
+
+# JDK folder if embedded
+.jdk17/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary outputs
+*.tmp
+*.log
+
+# Task 07 dynamically generated 10,000 benchmark files (generated via GenerateScoreDataset.java)
+Task07_Concurrent_Processor/input/script_valid_*.csv
+Task07_Concurrent_Processor/input/script_corrupt_*.csv

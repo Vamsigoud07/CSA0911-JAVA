@@ -1,0 +1,44 @@
+﻿==================================================
+   DAILY SALES REPORT - TRY-WITH-RESOURCES        
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+
+[TRY-WITH-RESOURCES] Processing: store1_chennai.csv
+[SUCCESS] store1_chennai.csv: Processed 5 transactions. Store Total: INR 8241.50
+
+[TRY-WITH-RESOURCES] Processing: store2_bangalore.csv
+[SUCCESS] store2_bangalore.csv: Processed 4 transactions. Store Total: INR 11730.75
+
+[TRY-WITH-RESOURCES] Processing: store3_hyderabad_corrupt.csv
+java.exe : [FAILED] Exception caught for file 'store3_hyderabad_corrupt.csv': For input string: "CORRUPT_NOT_A_NUMBER"
+At line:10 char:9
++ $out2 = & $JAVA -cp $CP task03.TryWithResourcesReport 2>&1 | Out-Stri ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([FAILED] Except...T_NOT_A_NUMBER":String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+[TRY-WITH-RESOURCES] Processing: missing_store.csv
+[FAILED] Exception caught for file 'missing_store.csv': 
+CSA09-192472021-Assignment3\Task03_Resource_Safety\input\missing_store.csv (The system cannot find the file specified)
+
+[TRY-WITH-RESOURCES] Processing: store4_mumbai.csv
+[SUCCESS] store4_mumbai.csv: Processed 3 transactions. Store Total: INR 10750.75
+
+[SUMMARY] All try-with-resources file handles automatically released.
+
+--------------------------------------------------
+   DEMONSTRATING SUPPRESSED EXCEPTIONS IN JAVA    
+--------------------------------------------------
+Opening two resources where close() throws an error during an active exception...
+  [ACQUIRED] Resource: DatabaseChannel
+  [ACQUIRED] Resource: AuditLogStream
+Executing primary business transaction in try block...
+  [CLOSING] AutoCloseable.close() invoked on: AuditLogStream
+  [CLOSING] AutoCloseable.close() invoked on: DatabaseChannel
+
+[CATCH] Caught Primary Exception: PRIMARY FAILURE: Database transaction timed out!
+Number of Suppressed Exceptions attached: 2
+  -> Suppressed [1]: Secondary Close Failure on resource: AuditLogStream
+  -> Suppressed [2]: Secondary Close Failure on resource: DatabaseChannel
+

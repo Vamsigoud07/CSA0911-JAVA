@@ -1,0 +1,8 @@
+﻿==================================================
+   TOKEN COUNTER: 'IF' VS 'WHILE' EXPERIMENT      
+==================================================
+
+Final Buffer Count: 0
+Rule: Always use 'while (condition) wait();' to protect against spurious wakeups!
+==================================================
+

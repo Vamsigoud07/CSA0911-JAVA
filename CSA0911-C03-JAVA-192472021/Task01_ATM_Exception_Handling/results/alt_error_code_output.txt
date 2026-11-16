@@ -1,0 +1,11 @@
+﻿==================================================
+   ATM SIMULATION: ERROR CODE & SCANNER VALIDATION
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+[DISPENSED] Cash dispensed: INR 1500.00 to Account: 1234567890
+
+[RESULT STATUS CODE]: 0
+Status Interpretation: SUCCESS (Code 0): Withdrawal processed successfully.
+Final Account Balance: INR 8500.00
+==================================================
+

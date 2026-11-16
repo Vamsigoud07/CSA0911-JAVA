@@ -1,0 +1,5 @@
+Strategy,TotalAttempts,SeatsAvailable,SeatsSold,TotalTimeMs,AvgTimePerAttemptNs
+SynchronizedMethod,10000,500,500,777,77791.08
+SynchronizedBlock,10000,500,500,761,76138.64
+ReentrantLock,10000,500,500,799,79933.24
+AtomicInteger_CAS,10000,500,500,765,76526.11

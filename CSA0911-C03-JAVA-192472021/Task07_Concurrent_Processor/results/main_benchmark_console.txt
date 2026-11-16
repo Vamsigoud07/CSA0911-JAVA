@@ -1,0 +1,55 @@
+﻿================================================================================
+   SEMESTER RESULT PROCESSING SYSTEM - CONCURRENT FAULT-TOLERANT ENGINE        
+   Course: CSA09 | Register No: 192472021 | SIMATS Saveetha School of Engg     
+================================================================================
+Generating deterministic dataset of 10000 score files (Seed: 42)...
+Dataset ready: 9700 Valid files on disk, 200 Corrupt files on disk, 100 Missing file references.
+
+--------------------------------------------------------------------------------
+   STAGE 1: VERIFYING CORRECTNESS ON SMALL HAND-CHECKED DATASET (10 FILES)      
+--------------------------------------------------------------------------------
+Hand-checked run complete in 81 ms:
+  Submitted  : 10 files
+  Successful : 7 files
+  Failed     : 3 files
+  Invariant (Success + Failed == Total): true
+
+--------------------------------------------------------------------------------
+   STAGE 2: FULL 10,000 FILES BENCHMARK (1, 2, 4, 8 THREADS)                    
+--------------------------------------------------------------------------------
+
+>>> Running benchmark with 1 Thread(s)... <<<
+  Thread Count  : 1
+  Execution Time: 218602 ms
+  Successful    : 9700 files
+  Failed        : 300 files (Controlled Injected Failures)
+  Throughput    : 45.75 files/sec
+  Invariant Check (9700 + 300 == 10000): PASSED [OK]
+
+>>> Running benchmark with 2 Thread(s)... <<<
+  Thread Count  : 2
+  Execution Time: 1178 ms
+  Successful    : 9700 files
+  Failed        : 300 files (Controlled Injected Failures)
+  Throughput    : 8488.96 files/sec
+  Invariant Check (9700 + 300 == 10000): PASSED [OK]
+
+>>> Running benchmark with 4 Thread(s)... <<<
+  Thread Count  : 4
+  Execution Time: 1289 ms
+  Successful    : 9700 files
+  Failed        : 300 files (Controlled Injected Failures)
+  Throughput    : 7757.95 files/sec
+  Invariant Check (9700 + 300 == 10000): PASSED [OK]
+
+>>> Running benchmark with 8 Thread(s)... <<<
+  Thread Count  : 8
+  Execution Time: 1505 ms
+  Successful    : 9700 files
+  Failed        : 300 files (Controlled Injected Failures)
+  Throughput    : 6644.52 files/sec
+  Invariant Check (9700 + 300 == 10000): PASSED [OK]
+
+--------------------------------------------------------------------------------
+Raw benchmark measurements saved successfully to: CSA09-192472021-Assignment3/Task07_Concurrent_Processor/results/benchmark_results.csv
+================================================================================

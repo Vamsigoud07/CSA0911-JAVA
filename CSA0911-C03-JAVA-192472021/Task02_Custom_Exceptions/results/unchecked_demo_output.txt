@@ -1,0 +1,9 @@
+﻿==================================================
+   ALTERNATIVE: UNCHECKED RUNTIME EXCEPTION DEMO  
+==================================================
+Student 192472021 successfully verified without checked throws clauses.
+Caught Unchecked Exception at controller level: Unchecked: Student 192479999 not registered.
+
+Signatures are cleaner, but developers must exercise discipline
+to ensure critical business failures are not left unhandled.
+

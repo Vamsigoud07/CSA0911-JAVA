@@ -1,0 +1,16 @@
+﻿==================================================
+   STUDENT B: 10-RUN THREAD SCHEDULING EXPERIMENT 
+==================================================
+Trial #01: Duration=179 ms | Order: Station-1 -> Station-4 -> Station-3 -> Station-2 | MaxPriority(Station-4) 1st? false
+Trial #02: Duration=175 ms | Order: Station-3 -> Station-1 -> Station-4 -> Station-2 | MaxPriority(Station-4) 1st? false
+Trial #03: Duration=180 ms | Order: Station-4 -> Station-1 -> Station-3 -> Station-2 | MaxPriority(Station-4) 1st? true
+Trial #04: Duration=174 ms | Order: Station-1 -> Station-4 -> Station-3 -> Station-2 | MaxPriority(Station-4) 1st? false
+Trial #05: Duration=181 ms | Order: Station-1 -> Station-4 -> Station-3 -> Station-2 | MaxPriority(Station-4) 1st? false
+Trial #06: Duration=177 ms | Order: Station-3 -> Station-2 -> Station-4 -> Station-1 | MaxPriority(Station-4) 1st? false
+Trial #07: Duration=181 ms | Order: Station-4 -> Station-2 -> Station-3 -> Station-1 | MaxPriority(Station-4) 1st? true
+Trial #08: Duration=177 ms | Order: Station-4 -> Station-3 -> Station-2 -> Station-1 | MaxPriority(Station-4) 1st? true
+Trial #09: Duration=177 ms | Order: Station-4 -> Station-3 -> Station-1 -> Station-2 | MaxPriority(Station-4) 1st? true
+Trial #10: Duration=185 ms | Order: Station-1 -> Station-4 -> Station-2 -> Station-3 | MaxPriority(Station-4) 1st? false
+
+Successfully exported all 10 trial measurements to CSA09-192472021-Assignment3/Task04_Thread_Lifecycle/results/ten_run_results.csv
+

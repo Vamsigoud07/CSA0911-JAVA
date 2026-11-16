@@ -1,0 +1,20 @@
+﻿==================================================
+   STUDENT B: DAEMON THREAD DEMONSTRATION         
+==================================================
+Is diagnosticDaemon a daemon? true
+[USER SCANNER] Processing high-priority answer script batch...
+  [DAEMON MONITOR] Hardware diagnostics check #1 (OK)
+[USER SCANNER] Scanned batch 1/3
+  [DAEMON MONITOR] Hardware diagnostics check #2 (OK)
+[USER SCANNER] Scanned batch 2/3
+  [DAEMON MONITOR] Hardware diagnostics check #3 (OK)
+[USER SCANNER] Scanned batch 3/3
+  [DAEMON MONITOR] Hardware diagnostics check #4 (OK)
+[USER SCANNER] User thread finished. Exiting scanner worker.
+  [DAEMON MONITOR] Hardware diagnostics check #5 (OK)
+
+[MAIN EXIT] Main method reached the end.
+Since no user threads remain, the JVM exits immediately.
+The daemon thread is automatically aborted without completing its infinite loop.
+==================================================
+

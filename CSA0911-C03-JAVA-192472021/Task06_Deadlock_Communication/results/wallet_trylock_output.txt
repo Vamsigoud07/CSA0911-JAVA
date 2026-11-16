@@ -1,0 +1,20 @@
+﻿==================================================
+   ALTERNATIVE: ReentrantLock.tryLock() BACKOFF   
+==================================================
+[Worker-1] Acquired lock on Wallet-A
+[Worker-2] Acquired lock on Wallet-B
+[Worker-1] Could not acquire lock on Wallet-B (Timeout). Releasing Wallet-A to avoid deadlock!
+[Worker-2] Could not acquire lock on Wallet-A (Timeout). Releasing Wallet-B to avoid deadlock!
+[Worker-2] Acquired lock on Wallet-B
+[Worker-1] Acquired lock on Wallet-A
+[Worker-2] Could not acquire lock on Wallet-A (Timeout). Releasing Wallet-B to avoid deadlock!
+[Worker-1] Acquired lock on Wallet-B. Executing transfer.
+[Worker-2] Acquired lock on Wallet-B
+[Worker-2] Acquired lock on Wallet-A. Executing transfer.
+
+--- Final Balances ---
+Wallet-A: INR 1100.00
+Wallet-B: INR 900.00
+Successful completion via lock timeout and backoff.
+==================================================
+

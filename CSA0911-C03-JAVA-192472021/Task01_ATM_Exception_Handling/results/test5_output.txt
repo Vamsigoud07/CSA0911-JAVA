@@ -1,0 +1,28 @@
+﻿==================================================
+   SIMATS SSE BANKING ATM SIMULATION SYSTEM       
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+
+[ATM Session Initiated]
+Input Account Number : 1234567890
+Input Amount         : 1000.00
+Card Config Path     : non_existent_reader.cfg
+Current Balance      : INR 10000.00
+
+--- Step 1: Validating Card Reader Hardware (Checked Exception Check) ---
+java.exe : [CATCH - FileNotFoundException]: Hardware fault detected.
+At line:22 char:7
++ $t5 = & $JAVA -cp $CP task01.ATMWithdrawalSimulation "1234567890" "10 ...
++       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([CATCH - FileNo...fault detected.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Details: ATM Card reader configuration file 'non_existent_reader.cfg' not found.
+Action: Card reader configuration offline. Transaction aborted.
+
+[FINALLY BLOCK EXECUTED]
+1. Card hardware session closed and card ejected safely.
+2. Security audit log updated (Transaction status: FAILED).
+3. ATM ready for next user.
+==================================================
+

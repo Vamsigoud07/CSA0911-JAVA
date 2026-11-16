@@ -1,0 +1,44 @@
+﻿==================================================
+   DAILY SALES REPORT - MANUAL CLOSE (TRY-FINALLY)
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+
+[MANUAL CLOSE] Opening file: store1_chennai.csv
+[SUCCESS] store1_chennai.csv: Processed 5 transactions. Store Total: INR 8241.50
+[FINALLY] Manually closing resources for store1_chennai.csv
+  -> BufferedReader closed successfully.
+  -> FileReader closed successfully.
+
+[MANUAL CLOSE] Opening file: store2_bangalore.csv
+[SUCCESS] store2_bangalore.csv: Processed 4 transactions. Store Total: INR 11730.75
+[FINALLY] Manually closing resources for store2_bangalore.csv
+  -> BufferedReader closed successfully.
+  -> FileReader closed successfully.
+
+[MANUAL CLOSE] Opening file: store3_hyderabad_corrupt.csv
+java.exe : [FAILED] Error processing file 'store3_hyderabad_corrupt.csv': For input string: "CORRUPT_NOT_A_NUMBER"
+At line:6 char:9
++ $out1 = & $JAVA -cp $CP task03.ManualCloseReport 2>&1 | Out-String
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([FAILED] Error ...T_NOT_A_NUMBER":String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[FINALLY] Manually closing resources for store3_hyderabad_corrupt.csv
+  -> BufferedReader closed successfully.
+  -> FileReader closed successfully.
+
+[MANUAL CLOSE] Opening file: missing_store.csv
+[FAILED] Error processing file 'missing_store.csv': File does not exist: 
+CSA09-192472021-Assignment3\Task03_Resource_Safety\input\missing_store.csv
+[FINALLY] Manually closing resources for missing_store.csv
+
+[MANUAL CLOSE] Opening file: store4_mumbai.csv
+[SUCCESS] store4_mumbai.csv: Processed 3 transactions. Store Total: INR 10750.75
+[FINALLY] Manually closing resources for store4_mumbai.csv
+  -> BufferedReader closed successfully.
+  -> FileReader closed successfully.
+
+[FINALLY] Closing summary report writer resources...
+  -> PrintWriter closed.
+  -> FileWriter closed.
+

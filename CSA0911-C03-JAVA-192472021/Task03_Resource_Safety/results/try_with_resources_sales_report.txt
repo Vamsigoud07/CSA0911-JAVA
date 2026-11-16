@@ -1,0 +1,13 @@
+==================================================
+  DAILY REGIONAL SALES SUMMARY (TRY-WITH-RESOURCES)
+==================================================
+store1_chennai.csv             | Valid Txns:   5 | Total: INR    8241.50 | Status: OK
+store2_bangalore.csv           | Valid Txns:   4 | Total: INR   11730.75 | Status: OK
+store3_hyderabad_corrupt.csv   | Status: FAILED (For input string: "CORRUPT_NOT_A_NUMBER")
+missing_store.csv              | Status: FAILED (CSA09-192472021-Assignment3\Task03_Resource_Safety\input\missing_store.csv (The system cannot find the file specified))
+store4_mumbai.csv              | Valid Txns:   3 | Total: INR   10750.75 | Status: OK
+--------------------------------------------------
+Total Successful Stores: 3
+Total Failed Stores    : 2
+GRAND TOTAL SALES      : INR 30723.00
+==================================================

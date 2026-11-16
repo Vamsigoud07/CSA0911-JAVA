@@ -1,0 +1,50 @@
+﻿==================================================
+   ALTERNATIVE: ArrayBlockingQueue TOKEN COUNTER  
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+[PRODUCER] Inserted token #01 | Queue size: 1
+  [CONSUMER] Retrieved token #01 | Cumulative sum: 1
+[PRODUCER] Inserted token #02 | Queue size: 1
+  [CONSUMER] Retrieved token #02 | Cumulative sum: 3
+[PRODUCER] Inserted token #03 | Queue size: 1
+  [CONSUMER] Retrieved token #03 | Cumulative sum: 6
+[PRODUCER] Inserted token #04 | Queue size: 1
+[PRODUCER] Inserted token #05 | Queue size: 2
+  [CONSUMER] Retrieved token #04 | Cumulative sum: 10
+[PRODUCER] Inserted token #06 | Queue size: 2
+  [CONSUMER] Retrieved token #05 | Cumulative sum: 15
+[PRODUCER] Inserted token #07 | Queue size: 2
+  [CONSUMER] Retrieved token #06 | Cumulative sum: 21
+[PRODUCER] Inserted token #08 | Queue size: 2
+[PRODUCER] Inserted token #09 | Queue size: 3
+  [CONSUMER] Retrieved token #07 | Cumulative sum: 28
+[PRODUCER] Inserted token #10 | Queue size: 3
+  [CONSUMER] Retrieved token #08 | Cumulative sum: 36
+[PRODUCER] Inserted token #11 | Queue size: 3
+[PRODUCER] Inserted token #12 | Queue size: 4
+  [CONSUMER] Retrieved token #09 | Cumulative sum: 45
+[PRODUCER] Inserted token #13 | Queue size: 4
+  [CONSUMER] Retrieved token #10 | Cumulative sum: 55
+[PRODUCER] Inserted token #14 | Queue size: 4
+  [CONSUMER] Retrieved token #11 | Cumulative sum: 66
+[PRODUCER] Inserted token #15 | Queue size: 4
+[PRODUCER] Inserted token #16 | Queue size: 5
+  [CONSUMER] Retrieved token #12 | Cumulative sum: 78
+[PRODUCER] Inserted token #17 | Queue size: 5
+  [CONSUMER] Retrieved token #13 | Cumulative sum: 91
+[PRODUCER] Inserted token #18 | Queue size: 5
+  [CONSUMER] Retrieved token #14 | Cumulative sum: 105
+[PRODUCER] Inserted token #19 | Queue size: 5
+  [CONSUMER] Retrieved token #15 | Cumulative sum: 120
+[PRODUCER] Inserted token #20 | Queue size: 5
+  [CONSUMER] Retrieved token #16 | Cumulative sum: 136
+  [CONSUMER] Retrieved token #17 | Cumulative sum: 153
+  [CONSUMER] Retrieved token #18 | Cumulative sum: 171
+  [CONSUMER] Retrieved token #19 | Cumulative sum: 190
+  [CONSUMER] Retrieved token #20 | Cumulative sum: 210
+
+--- Final Collection Summary ---
+Sum of tokens collected: 210 (expected 210)
+ArrayBlockingQueue handles all locking and condition signaling transparently.
+==================================================
+

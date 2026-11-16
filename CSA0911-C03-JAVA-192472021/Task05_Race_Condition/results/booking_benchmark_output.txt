@@ -1,0 +1,12 @@
+﻿==================================================
+   TASK 05: BENCHMARKING 10,000 BOOKING ATTEMPTS  
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+1. Synchronized Method : Time= 777 ms | Avg=77791.08 ns/attempt | Sold=500
+2. Synchronized Block  : Time= 761 ms | Avg=76138.64 ns/attempt | Sold=500
+3. ReentrantLock       : Time= 799 ms | Avg=79933.24 ns/attempt | Sold=500
+4. AtomicInteger (CAS) : Time= 765 ms | Avg=76526.11 ns/attempt | Sold=500
+
+Benchmark results successfully exported to CSA09-192472021-Assignment3/Task05_Race_Condition/results/booking_benchmark.csv
+==================================================
+

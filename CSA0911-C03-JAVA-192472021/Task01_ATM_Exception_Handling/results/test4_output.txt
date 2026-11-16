@@ -1,0 +1,35 @@
+﻿==================================================
+   SIMATS SSE BANKING ATM SIMULATION SYSTEM       
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+
+[ATM Session Initiated]
+Input Account Number : 1234567890
+Input Amount         : 25000.00
+Card Config Path     : CSA09-192472021-Assignment3\Task01_ATM_Exception_Handling\card_reader.cfg
+Current Balance      : INR 10000.00
+
+--- Step 1: Validating Card Reader Hardware (Checked Exception Check) ---
+[SUCCESS] Card reader hardware verified.
+
+--- Step 2: Parsing Inputs (Multi-Catch / Unchecked Check) ---
+[SUCCESS] Account number 1234567890 and amount parsed successfully.
+
+--- Step 3: Validating Business Rules ---
+java.exe : [CATCH - InsufficientBalanceException]: Balance limit exceeded.
+At line:18 char:7
++ $t4 = & $JAVA -cp $CP task01.ATMWithdrawalSimulation "1234567890" "25 ...
++       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([CATCH - Insuff...limit exceeded.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Details: Transaction Declined: Insufficient balance.
+Available Balance: INR 10000.00 | Requested: INR 25000.00
+Action: Please enter an amount within your available balance.
+
+[FINALLY BLOCK EXECUTED]
+1. Card hardware session closed and card ejected safely.
+2. Security audit log updated (Transaction status: FAILED).
+3. ATM ready for next user.
+==================================================
+

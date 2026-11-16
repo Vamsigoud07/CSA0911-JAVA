@@ -1,0 +1,5 @@
+Threads,TotalFiles,SuccessfulFiles,FailedFiles,DurationMs,ThroughputFilesPerSec,InvariantPassed
+1,10000,9700,300,218602,45.75,true
+2,10000,9700,300,1178,8488.96,true
+4,10000,9700,300,1289,7757.95,true
+8,10000,9700,300,1505,6644.52,true

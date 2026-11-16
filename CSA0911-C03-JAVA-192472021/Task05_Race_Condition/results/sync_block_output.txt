@@ -1,0 +1,13 @@
+﻿==================================================
+   SEAT BOOKING WITH SYNCHRONIZED BLOCK           
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+
+--- Booking Results (Synchronized Block) ---
+Initial Available Seats : 10
+Total Booking Requests  : 100
+Seats sold: 10
+Remaining Seats Counter : 0
+[VERIFIED] Exactly 10 seats sold. 0 double bookings.
+==================================================
+

@@ -1,0 +1,18 @@
+﻿==================================================
+   DEMONSTRATING UNCAUGHT EXCEPTION BEHAVIOR      
+   Student B Evidence - JVM Abrupt Termination    
+==================================================
+Initiating ATM session...
+Entering methodA()...
+Entering methodB() - ATM internal calculation...
+java.exe : Exception in thread "main" java.lang.ArithmeticException: / by zero
+At line:34 char:15
++ ... _uncaught = & $JAVA -cp $CP task01.UncaughtExceptionDemo 2>&1 | Out-S ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Exception in th...tion: / by zero:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+	at task01.UncaughtExceptionDemo.methodB(UncaughtExceptionDemo.java:36)
+	at task01.UncaughtExceptionDemo.methodA(UncaughtExceptionDemo.java:27)
+	at task01.UncaughtExceptionDemo.main(UncaughtExceptionDemo.java:21)
+

@@ -1,0 +1,16 @@
+﻿==================================================
+   TEN-RUN RACE CONDITION REPRODUCTION EXPERIMENT 
+==================================================
+Trial #01: Unsynchronized Sold = 98 (Oversold?  true) | Synchronized Sold = 10 (Exact 10?  true)
+Trial #02: Unsynchronized Sold = 93 (Oversold?  true) | Synchronized Sold = 10 (Exact 10?  true)
+Trial #03: Unsynchronized Sold = 94 (Oversold?  true) | Synchronized Sold = 10 (Exact 10?  true)
+Trial #04: Unsynchronized Sold = 88 (Oversold?  true) | Synchronized Sold = 10 (Exact 10?  true)
+Trial #05: Unsynchronized Sold = 99 (Oversold?  true) | Synchronized Sold = 10 (Exact 10?  true)
+Trial #06: Unsynchronized Sold = 100 (Oversold?  true) | Synchronized Sold = 10 (Exact 10?  true)
+Trial #07: Unsynchronized Sold = 97 (Oversold?  true) | Synchronized Sold = 10 (Exact 10?  true)
+Trial #08: Unsynchronized Sold = 98 (Oversold?  true) | Synchronized Sold = 10 (Exact 10?  true)
+Trial #09: Unsynchronized Sold = 79 (Oversold?  true) | Synchronized Sold = 10 (Exact 10?  true)
+Trial #10: Unsynchronized Sold = 100 (Oversold?  true) | Synchronized Sold = 10 (Exact 10?  true)
+
+Results saved to CSA09-192472021-Assignment3/Task05_Race_Condition/results/ten_run_race_comparison.csv
+

@@ -1,0 +1,20 @@
+﻿==================================================
+   HOSTEL WALLET: CONSISTENT LOCK ORDERING DEMO   
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+[Transfer-Thread-1] Enforcing lock order: Wallet-A first, then Wallet-B
+[Transfer-Thread-1] Acquired 1st lock: Wallet-A
+[Transfer-Thread-2] Enforcing lock order: Wallet-A first, then Wallet-B
+[Transfer-Thread-1] Acquired 2nd lock: Wallet-B
+[Transfer-Thread-1] Transferred INR 150.00 from Wallet-A to Wallet-B. Success!
+[Transfer-Thread-2] Acquired 1st lock: Wallet-A
+[Transfer-Thread-2] Acquired 2nd lock: Wallet-B
+[Transfer-Thread-2] Transferred INR 250.00 from Wallet-B to Wallet-A. Success!
+
+--- Final Balances After Concurrent Transfers ---
+Wallet-A Balance: INR 1100.00
+Wallet-B Balance: INR 900.00
+Total System Balance: INR 2000.0
+[VERIFIED] All transfers completed with zero deadlock!
+==================================================
+

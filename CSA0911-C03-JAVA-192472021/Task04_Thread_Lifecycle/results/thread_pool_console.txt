@@ -1,0 +1,32 @@
+﻿==================================================
+   ALTERNATIVE: FIXED THREAD POOL SCANNER        
+==================================================
+Initialized FixedThreadPool with 4 worker threads.
+Submitting 20 answer-script scanning batches...
+
+[POOL WORKER: pool-1-thread-4] Finished Batch #04
+[POOL WORKER: pool-1-thread-3] Finished Batch #03
+[POOL WORKER: pool-1-thread-1] Finished Batch #01
+[POOL WORKER: pool-1-thread-2] Finished Batch #02
+[POOL WORKER: pool-1-thread-4] Finished Batch #05
+[POOL WORKER: pool-1-thread-2] Finished Batch #08
+[POOL WORKER: pool-1-thread-1] Finished Batch #07
+[POOL WORKER: pool-1-thread-3] Finished Batch #06
+[POOL WORKER: pool-1-thread-4] Finished Batch #09
+[POOL WORKER: pool-1-thread-1] Finished Batch #11
+[POOL WORKER: pool-1-thread-2] Finished Batch #10
+[POOL WORKER: pool-1-thread-3] Finished Batch #12
+[POOL WORKER: pool-1-thread-2] Finished Batch #15
+[POOL WORKER: pool-1-thread-1] Finished Batch #14
+[POOL WORKER: pool-1-thread-4] Finished Batch #13
+[POOL WORKER: pool-1-thread-3] Finished Batch #16
+[POOL WORKER: pool-1-thread-2] Finished Batch #17
+[POOL WORKER: pool-1-thread-1] Finished Batch #18
+[POOL WORKER: pool-1-thread-4] Finished Batch #19
+[POOL WORKER: pool-1-thread-3] Finished Batch #20
+
+All pool batches completed? true
+Total Batches Processed : 20 / 20
+Total Execution Time    : 154 ms
+==================================================
+

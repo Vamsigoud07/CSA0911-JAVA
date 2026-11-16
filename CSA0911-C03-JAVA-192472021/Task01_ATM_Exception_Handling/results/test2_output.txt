@@ -1,0 +1,31 @@
+﻿==================================================
+   SIMATS SSE BANKING ATM SIMULATION SYSTEM       
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+
+[ATM Session Initiated]
+Input Account Number : 1234567890
+Input Amount         : two_thousand
+Card Config Path     : CSA09-192472021-Assignment3\Task01_ATM_Exception_Handling\card_reader.cfg
+Current Balance      : INR 10000.00
+
+--- Step 1: Validating Card Reader Hardware (Checked Exception Check) ---
+[SUCCESS] Card reader hardware verified.
+
+--- Step 2: Parsing Inputs (Multi-Catch / Unchecked Check) ---
+java.exe : [CATCH - NumberFormatException]: Invalid numeric formatting.
+At line:10 char:7
++ $t2 = & $JAVA -cp $CP task01.ATMWithdrawalSimulation "1234567890" "tw ...
++       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([CATCH - Number...ric formatting.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Details: Non-numeric input encountered: For input string: "two_thousand"
+Action: Please enter valid digits for account number and withdrawal amount.
+
+[FINALLY BLOCK EXECUTED]
+1. Card hardware session closed and card ejected safely.
+2. Security audit log updated (Transaction status: FAILED).
+3. ATM ready for next user.
+==================================================
+

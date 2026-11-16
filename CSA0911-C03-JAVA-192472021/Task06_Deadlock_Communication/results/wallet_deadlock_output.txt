@@ -1,0 +1,22 @@
+﻿==================================================
+   HOSTEL WALLET TRANSFERS: DEADLOCK DEMO         
+   Student: K VENKATA VAMSI GOUD (192472021)      
+==================================================
+[Thread-2] Attempting to acquire lock on Wallet-B
+[Thread-1] Attempting to acquire lock on Wallet-A
+[Thread-2] ACQUIRED lock on Wallet-B
+[Thread-1] ACQUIRED lock on Wallet-A
+[Thread-2] Waiting to acquire lock on Wallet-A (CIRCULAR WAIT)
+[Thread-1] Waiting to acquire lock on Wallet-B (CIRCULAR WAIT)
+
+[DEADLOCK WATCHDOG ALERT] Deadlock Detected!
+  Thread-1 State: BLOCKED (Holding Wallet-A, Waiting for Wallet-B)
+  Thread-2 State: BLOCKED (Holding Wallet-B, Waiting for Wallet-A)
+  Coffman Conditions Verified:
+    1. Mutual Exclusion: Wallets locked exclusively via synchronized.
+    2. Hold and Wait: Thread-1 holds A while requesting B; Thread-2 holds B while requesting A.
+    3. No Preemption: JVM cannot forcibly revoke monitor locks.
+    4. Circular Wait: Thread-1 -> Wallet-B -> Thread-2 -> Wallet-A -> Thread-1.
+
+Terminating demonstration safely via watchdog timeout.
+
